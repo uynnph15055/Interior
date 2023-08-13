@@ -1,0 +1,6 @@
+node_modules
+.idea
+.vscode/settings.json
+
+/assets/css/main.css.map
+node_modules

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__top">
+                <div class="containerX header__top-in">
+                    <p class="header__top-description">Chất lượng sản phẩm luôn được ưu tiên</p>
+                    <p class="header__top-work-time"><i class="fa-solid fa-clock"></i> 8:00 - 20:00</p>
+                    <ul class="header__top-social">
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-youtube"></i></a></li>
+                     </ul>
+                </div>
+            </div>
+            <div class="header__main containerX">
+                <div class="header__main-in">
+                    <a href=""><img class="header__main-in-logo" src="./assets/image/logo.png" alt=""></a>
+                    <form class="header__main-in-search">
+                        <input type="text" class="header__main-in-search-input" placeholder="Tìm kiếm tên, danh mục sản phẩm . . .">
+                        <div  class="header__main-in-search-select" id="search-all-text">
+                            <span class="all-text" >Tất cả</span> <i class="fa-solid fa-caret-down"></i>
+                            <input hidden type="text" id="cate-value" value="">
+                            <div class="header__main-in-search-select-cate d-hide">
+                                <ul class="cate__list">
+                                    <li class="item">
+                                        Giầy
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__main-in-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="header__main-in-info">
+                        <div class="header__main-in-info-cart">
+                            6.000.000<span class="unit">đ</span> 
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            <div class="cart-count">
+                                1
+                            </div>
+                        </div>
+                        <div class="header__main-in-info-user">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/320946626_879928639916091_793619743712105860_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_ohc=VIvYnpviLu4AX-XPp-8&_nc_ht=scontent.fhan5-2.fna&oh=00_AfDePh_1S_MIZQhGdMnSSJMtwt04IKgEjlVMUTOTVta61g&oe=64727EEF" alt="">
+                            <span>Nguyễn Ngọc Uy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav">
+                <ul class="containerX header__nav-list">
+                    <li class="menu__item">
+                        <a class="link home" href="">Trang chủ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="">Giới thiệu</a> 
+                    </li>
+                    <li class="menu__item menu__product">
+                        <a class="link simple" href=""><label for="product">Sản phẩm</label>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <input type="checkbox" id="product" hidden class="sub-menu-product">
+                        <ul class="sub-list">
+                            <li class="item"><a href="" class="sub-link">Giầy nam</a></li>
+                            <li class="item"><a href="" class="sub-link">Áo nam</a></li>
+                            <li class="item"><a href="" class="sub-link">Giầy Nike</a></li>
+                            <li class="item"><a href="" class="sub-link">Giầy Lười</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="menu__item">Tin tức</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="content__product containerX">
+            <div class="content__product-slider-cate">
+                <button id="button-slider-cate-prev" class="btn button-prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="button-slider-cate-next" class="btn button-next"><i class="fa-solid fa-arrow-right"></i></button>
+                <div class="content__product-box">
+                    <div class="item">
+                        <a href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>               
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>               
+                    <div class="item">
+                        <a  href="" class="link">Giầy nam</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content__product-search">
+                
+            </div>
+            <div class="product__feature">
+                <div class="product">
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/mwc (1).jpg" alt="">
+                        <p class="name">Giày Thể Thao Nam MWC NATT</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a> 
+               </div>
+            </div>
+            <div class="view-all">
+                <button class="btn">Xem thêm</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="containerX in">
+                <div class="footer__intro">
+                    <a class="footer__intro-logo" href=""><img src="./assets/image/logo.png" alt=""></a>
+                    <p class="footer__intro-description">
+                        STT bán quần áo hay, tổng hợp những câu nói hya khi bán hàng quần áo hài hước, thu hút, kích thích sự tò mò của khách hàng, gia tăng tương tác và cải thiện lượng đơn hàng bán ra
+                    </p>
+                    <img class="footer__intro-certification" src="./assets/image/certification.png" alt="">
+                </div>
+                <div class="footer__info">
+                    <h2 class="footer__info-title">TÌM HiỂU THÊM VỀ HỆ THỐNG UY SHOP</h2>
+                    <div class="footer__info-wapper">
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">Giới thiệu</h3>
+                            <ul class="footer__item-list">
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Về Qcshop</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Hợp tác với Qcshop</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Cơ hội nghề nghiệp</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Quy chế sàn giao dịch</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Các khuyến mãi đã bán</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Blog & Tin tức</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">Chính sách</h3>
+                            <ul class="footer__item-list">
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách Membership</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách thanh toán</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Hướng dẫn mua hàng</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách đổi sản phẩm</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Bảo mật thông tin cá nhân</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">THANH TOÁN</h3>
+                            <ul class="footer__item-bank">
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/vnpay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/momo.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/shoppe pay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/Grap pay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/vnpay.png" alt=""></a></li>
+                            </ul>
+                            <h3 class="footer__item-title">MẠNG XÃ HỘI</h3>
+                            <ul class="footer__item-social">
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-youtube"></i></a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="back-top" id="back-top">
+            <i class="fa-sharp fa-solid fa-jet-fighter-up"></i>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+</body>
+</html> 

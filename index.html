@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__top">
+                <div class="containerX header__top-in">
+                    <p class="header__top-description">Chất lượng sản phẩm luôn được ưu tiên</p>
+                    <p class="header__top-work-time"><i class="fa-solid fa-clock"></i> 8:00 - 20:00</p>
+                    <ul class="header__top-social">
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-youtube"></i></a></li>
+                     </ul>
+                </div>
+            </div>
+            <div class="header__main containerX">
+                <div class="header__main-in">
+                    <a href=""><img class="header__main-in-logo" src="./assets/image/logo.png" alt=""></a>
+                    <form class="header__main-in-search">
+                        <input type="text" class="header__main-in-search-input" placeholder="Tìm kiếm tên, danh mục sản phẩm . . .">
+                        <div  class="header__main-in-search-select" id="search-all-text">
+                            <span class="all-text" >Tất cả</span> <i class="fa-solid fa-caret-down"></i>
+                            <input hidden type="text" id="cate-value" value="">
+                            <div class="header__main-in-search-select-cate d-hide">
+                                <ul class="cate__list">
+                                    <li class="item">
+                                        Giầy
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__main-in-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="header__main-in-info">
+                        <div class="header__main-in-info-cart">
+                            6.000.000<span class="unit">đ</span> 
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            <div class="cart-count">
+                                1
+                            </div>
+                        </div>
+                        <div class="header__main-in-info-user">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/320946626_879928639916091_793619743712105860_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_ohc=VIvYnpviLu4AX-XPp-8&_nc_ht=scontent.fhan5-2.fna&oh=00_AfDePh_1S_MIZQhGdMnSSJMtwt04IKgEjlVMUTOTVta61g&oe=64727EEF" alt="">
+                            <span>Nguyễn Ngọc Uy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav">
+                <ul class="containerX header__nav-list">
+                    <li class="menu__item">
+                        <a class="link home" href="">Trang chủ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="">Giới thiệu</a> 
+                    </li>
+                    <li class="menu__item menu__product">
+                        <a class="link simple" href=""><label for="product">Sản phẩm</label>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <input type="checkbox" id="product" hidden class="sub-menu-product">
+                        <ul class="sub-list">
+                            <li class="item"><a href="" class="sub-link">Giầy nam</a></li>
+                            <li class="item"><a href="" class="sub-link">Áo nam</a></li>
+                            <li class="item"><a href="" class="sub-link">Giầy Nike</a></li>
+                            <li class="item"><a href="" class="sub-link">Giầy Lười</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="menu__item">Tin tức</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="banner">
+            <img class="image-item" src="./assets/image/banner/z4587701620921_f0215d61affb429c705755935d23e6dd.jpg" alt="">
+            <img class="image-item" src="./assets/image/banner/z4587701624850_671372a61f8cc55171f9e50eed35fbd0.jpg" alt="">
+        </div>
+        <section class="category__slider">
+            <div class="containerX">
+                <h2 class="title text-center">DANH MỤC SẢN PHẨM</h2>
+                <div class="slider">
+                    <button class="button-next" style="z-index: 99;">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="button-prev" style="z-index: 99;">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                    <div class="slider-padding">
+                        <div class="slider-item">
+                            <img src="./assets/image/product/Ban-lam-viec-Coastal-600x400.jpg" alt="">
+                            <p class="cate-name">Bàn</p>
+                        </div>
+                        <div href="" class="slider-item">
+                            <img src="./assets/image/product/ARMCHAIR-XOAY-ALBERT-KUIP-TAUPE-120233Z-8-600x400.jpg" alt="">
+                            <p class="cate-name">Ghế</p>
+                        </div>
+                        <div href="" class="slider-item">
+                            <img src="./assets/image/product/BINH-VASE-ATELIER-JAUNE-H26-156603C-1-1-300x200.jpg" alt="">
+                            <p class="cate-name">Bình hoa</p>
+                        </div>
+                        <div href="" class="slider-item">
+                            <img src="./assets/image/product/Giuong-Coastal-1m8-xanh-600x400.jpg" alt="">
+                            <p class="cate-name">Giường</p>
+                        </div>
+                        <div href="" class="slider-item">
+                            <img src="./assets/image/product/Sofa-Dax-Everest-3-cho-mau-vang-1-300x200.jpg" alt="">
+                            <p  class="cate-name">Sofa</p>
+                        </div>
+                        <div href="" class="slider-item">
+                            <img src="./assets/image/product/1000-san-pham-nha-xinh56-600x400.jpg" alt="">
+                            <p  class="cate-name">Kệ tivi</p>
+                        </div>
+                        <div href="" class="slider-item">
+                            <img src="./assets/image/product/bep_vivo_mau_2-13-600x400.jpg" alt="">
+                            <p  class="cate-name">Tủ bếp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product__feature">
+            <div class="containerX">
+               <div class="product__feature-header">
+                   <h2 class="text-left title-left">SẢN PHẨM NỔI BẬT</h2>
+                   <a class="product__feature-header-all" href="">Tất cả</a>
+               </div>
+               <div class="product">
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a>
+                    <a href="" class="product-item">
+                        <span class="discount">-20%</span>
+                        <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                        <p class="name">Tủ Cabinet Coastal</p>
+                        <div class="price">
+                            <h2 class="main">720.000₫</h2>
+                            <h3 class="sale">500.000₫</h3>
+                        </div>
+                        <div class="cart">
+                            <button class="btn">Thêm giỏ hàng</button>
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                        </div>
+                    </a> 
+               </div>
+            </div>
+        </section>
+        <section class="product_sell">
+            <div class="containerX">
+                <div class="product_sell-header">
+                    <h2 class="text-right title-right">SẢN PHẨM BÁN CHẠY NHẤT</h2>
+                </div>
+                <div class="product_sell-wrapper">
+                    <ul class="nav">
+                        <li class="item"><a href="" class="link active">Tất cả</a></li>
+                        <li class="item"><a href="" class="link">Bàn ghế</a></li>
+                        <li class="item"><a href="" class="link">Kệ tivi</a></li>
+                        <li class="item"><a href="" class="link">Sofa</a></li>
+                        <li class="item"><a href="" class="link">Tủ bếp</a></li>
+                        <li class="item"><a href="" class="link">Bình hoa</a></li>
+                    </ul>
+                    <div class="product">
+                        <div class="all">
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                            <a href="" class="product-item">
+                                <span class="discount">-20%</span>
+                                <img class="image" src="./assets/image/product/giuong-go-soi-1.jpg" alt="">
+                                <p class="name">Tủ Cabinet Coastal</p>
+                                <div class="price">
+                                    <h2 class="main">720.000₫</h2>
+                                    <h3 class="sale">500.000₫</h3>
+                                </div>
+                                <div class="cart">
+                                    <button class="btn">Thêm giỏ hàng</button>
+                                    <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="page">
+                            <li class="item"><a href="" class="link"><i class="fa-solid fa-angles-left"></i></a></li>
+                            <li class="item"><a href="" class="link active">1</a></li>
+                            <li class="item"><a href="" class="link">2</a></li>
+                            <li class="item"><a href="" class="link">3</a></li>
+                            <li class="item"><a href="" class="link"><i class="fa-solid fa-angles-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="post">
+            <div class="containerX">
+                <div class="post__header">
+                    <h2 class="text-center title">TIN TỨC MỚI NHẤT</h2>
+                </div>
+                <div class="post__list">
+                    <a href="" class="post__item">
+                        <img src="./assets/image/post-1.jpg" alt="" class="image">
+                        <div class="post__info">
+                            <h3 class="post__title">Bàn giám đốc chân hợp kim nhôm nhập khẩu Filza 2m – NH-2B</h3>
+                            <p class="post__autor"><i class="fa-solid fa-user"></i>Nguyễn Ngọc Uy</p>
+                            <p class="post_content">Bàn giám đốc chân hợp kim nhôm nhập khẩu Filza 2m – BGDDK43.Bàn làm việc quản lý giám đốc 2m màu vân gỗ là dòng sản phẩm được thiết kế riêng dùng cho các giám đốc, lãnh đạo công ty, cơ quan sử dụng chất liệu gỗ cao cấp, thiết kế sang trọng, đẳng cấp.</p>
+                        </div>
+                        <div class="post__date">
+                            <span>
+                                TH
+                            </span>
+                            <span>
+                                03
+                            </span>
+                        </div>
+                    </a>
+                    <a href="" class="post__item">
+                        <img src="./assets/image/post-2.jpg" alt="" class="image">
+                        <div class="post__info">
+                            <h3 class="post__title">Bàn giám đốc chân hợp kim nhôm nhập khẩu Filza 2m – NH-2B</h3>
+                            <p class="post__autor"><i class="fa-solid fa-user"></i>Nguyễn Đức Bình</p>
+                            <p class="post_content">Bàn giám đốc chân hợp kim nhôm nhập khẩu Filza 2m – BGDDK43.Bàn làm việc quản lý giám đốc 2m màu vân gỗ là dòng sản phẩm được thiết kế riêng dùng cho các giám đốc, lãnh đạo công ty, cơ quan sử dụng chất liệu gỗ cao cấp, thiết kế sang trọng, đẳng cấp.</p>
+                        </div>
+                        <div class="post__date">
+                            <span>
+                                TH
+                            </span>
+                            <span>
+                                03
+                            </span>
+                        </div>
+                    </a>
+                    <a href="" class="post__item">
+                        <img src="./assets/image/post-3.jpg" alt="" class="image">
+                        <div class="post__info">
+                            <h3 class="post__title">Bàn giám đốc chân hợp kim nhôm nhập khẩu Filza 2m – NH-2B</h3>
+                            <p class="post__autor"><i class="fa-solid fa-user"></i>Nguyễn Văn Trọng</p>
+                            <p class="post_content">Bàn giám đốc chân hợp kim nhôm nhập khẩu Filza 2m – BGDDK43.Bàn làm việc quản lý giám đốc 2m màu vân gỗ là dòng sản phẩm được thiết kế riêng dùng cho các giám đốc, lãnh đạo công ty, cơ quan sử dụng chất liệu gỗ cao cấp, thiết kế sang trọng, đẳng cấp.</p>
+                        </div>
+                        <div class="post__date">
+                            <span>
+                                TH
+                            </span>
+                            <span>
+                                03
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="containerX in">
+                <div class="footer__intro">
+                    <a class="footer__intro-logo" href=""><img src="./assets/image/logo.png" alt=""></a>
+                    <p class="footer__intro-description">
+                        STT bán quần áo hay, tổng hợp những câu nói hya khi bán hàng quần áo hài hước, thu hút, kích thích sự tò mò của khách hàng, gia tăng tương tác và cải thiện lượng đơn hàng bán ra
+                    </p>
+                    <img class="footer__intro-certification" src="./assets/image/certification.png" alt="">
+                </div>
+                <div class="footer__info">
+                    <h2 class="footer__info-title">TÌM HiỂU THÊM VỀ HỆ THỐNG CÔNG TY</h2>
+                    <div class="footer__info-wapper">
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">Giới thiệu</h3>
+                            <ul class="footer__item-list">
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Về nội thất Tinh Túy</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Hợp tác với công ty</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Cơ hội nghề nghiệp</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Quy chế sàn giao dịch</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Các khuyến mãi đã bán</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Blog & Tin tức</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">Chính sách</h3>
+                            <ul class="footer__item-list">
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách Membership</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách thanh toán</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Hướng dẫn mua hàng</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách đổi sản phẩm</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Bảo mật thông tin cá nhân</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">THANH TOÁN</h3>
+                            <ul class="footer__item-bank">
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/vnpay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/momo.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/shoppe pay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/Grap pay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/vnpay.png" alt=""></a></li>
+                            </ul>
+                            <h3 class="footer__item-title">MẠNG XÃ HỘI</h3>
+                            <ul class="footer__item-social">
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-youtube"></i></a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="back-top" id="back-top">
+            <i class="fa-solid fa-caret-up"></i>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+</body>
+</html> 

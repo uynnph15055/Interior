@@ -1,0 +1,12 @@
+/* include file scss */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap');
+
+@import "variables";
+@import "variables-override";/* Override _variable.scss from bootstrap, ... */
+
+@import "mixin";
+@import "base";
+@import "commom";
+@import "fuctions";
+//Components
+@import "components";

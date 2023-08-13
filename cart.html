@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/image/logo.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__top">
+                <div class="containerX header__top-in">
+                    <p class="header__top-description">Chất lượng sản phẩm luôn được ưu tiên</p>
+                    <p class="header__top-work-time"><i class="fa-solid fa-clock"></i> 8:00 - 20:00</p>
+                    <ul class="header__top-social">
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="header__top-social-item"><a href="" class="header__top-social-item-link"><i class="fa-brands fa-youtube"></i></a></li>
+                     </ul>
+                </div>
+            </div>
+            <div class="header__main containerX">
+                <div class="header__main-in">
+                    <a href=""><img class="header__main-in-logo" src="./assets/image/logo.png" alt=""></a>
+                    <form class="header__main-in-search">
+                        <input type="text" class="header__main-in-search-input" placeholder="Tìm kiếm tên, danh mục sản phẩm . . .">
+                        <div  class="header__main-in-search-select" id="search-all-text">
+                            <span class="all-text" >Tất cả</span> <i class="fa-solid fa-caret-down"></i>
+                            <input hidden type="text" id="cate-value" value="">
+                            <div class="header__main-in-search-select-cate d-hide">
+                                <ul class="cate__list">
+                                    <li class="item">
+                                        Giầy
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                    <li class="item">
+                                        Quần
+                                    </li>
+                                    <li class="item">
+                                        Áo
+                                    </li>
+                                    <li class="item">
+                                        Dép
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__main-in-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="header__main-in-info">
+                        <div class="header__main-in-info-cart">
+                            6.000.000<span class="unit">đ</span> 
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            <div class="cart-count">
+                                1
+                            </div>
+                        </div>
+                        <div class="header__main-in-info-user">
+                            <img src="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/320946626_879928639916091_793619743712105860_n.jpg?stp=c0.23.206.206a_dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_ohc=VIvYnpviLu4AX-XPp-8&_nc_ht=scontent.fhan5-2.fna&oh=00_AfDePh_1S_MIZQhGdMnSSJMtwt04IKgEjlVMUTOTVta61g&oe=64727EEF" alt="">
+                            <span>Nguyễn Ngọc Uy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav">
+                <ul class="containerX header__nav-list">
+                    <li class="menu__item">
+                        <a class="link home" href="">Trang chủ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="">Giới thiệu</a> 
+                    </li>
+                    <li class="menu__item menu__product">
+                        <a class="link simple" href=""><label for="product">Sản phẩm</label>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <input type="checkbox" id="product" hidden class="sub-menu-product">
+                        <ul class="sub-list">
+                            <li class="item"><a href="" class="sub-link">Giầy nam</a></li>
+                            <li class="item"><a href="" class="sub-link">Áo nam</a></li>
+                            <li class="item"><a href="" class="sub-link">Giầy Nike</a></li>
+                            <li class="item"><a href="" class="sub-link">Giầy Lười</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="menu__item">Tin tức</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link simple" href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="content__cart">
+            <div class="containerX">
+                <h2 class="title text-center">GIỎ HÀNG CỦA BẠN</h2>
+                <div class="content">
+                    <div class="content__info">
+                        <table class="table-cart">
+                            <thead class="thead">
+                                <tr>
+                                    <th>#</th>
+                                    <th style="text-align: left;">Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá tiền</th>
+                                    <th>Thành tiền</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tbody">
+                                <tr class="tr">
+                                    <td class="index">1</td>
+                                    <td class="cart__pro">
+                                        <img class="cart__pro-image" src="data:image/jpeg;base64,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" alt="">
+                                        <div class="cart__pro-info">
+                                            <p class="name">Áo Polo Nam Cao Cấp Màu Tím QCP013</p>
+                                            <p class="variable">Màu vàng <span class="color"></span><span class="line">-</span>Size L</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="down"><i class="fa-solid fa-minus"></i></button>
+                                        <input type="text" class="count">
+                                        <button class="up"><i class="fa-solid fa-plus"></i></button>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content__paying"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="containerX in">
+                <div class="footer__intro">
+                    <a class="footer__intro-logo" href=""><img src="./assets/image/logo.png" alt=""></a>
+                    <p class="footer__intro-description">
+                        STT bán quần áo hay, tổng hợp những câu nói hya khi bán hàng quần áo hài hước, thu hút, kích thích sự tò mò của khách hàng, gia tăng tương tác và cải thiện lượng đơn hàng bán ra
+                    </p>
+                    <img class="footer__intro-certification" src="./assets/image/certification.png" alt="">
+                </div>
+                <div class="footer__info">
+                    <h2 class="footer__info-title">TÌM HiỂU THÊM VỀ HỆ THỐNG UY SHOP</h2>
+                    <div class="footer__info-wapper">
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">Giới thiệu</h3>
+                            <ul class="footer__item-list">
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Về Qcshop</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Hợp tác với Qcshop</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Cơ hội nghề nghiệp</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Quy chế sàn giao dịch</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Các khuyến mãi đã bán</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Blog & Tin tức</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">Chính sách</h3>
+                            <ul class="footer__item-list">
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách Membership</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách thanh toán</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Hướng dẫn mua hàng</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Chính sách đổi sản phẩm</a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-solid fa-circle-right"></i>Bảo mật thông tin cá nhân</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h3 class="footer__item-title">THANH TOÁN</h3>
+                            <ul class="footer__item-bank">
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/vnpay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/momo.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/shoppe pay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/Grap pay.png" alt=""></a></li>
+                                <li class="item"><a href="" class="link"><img src="./assets/image/paying/vnpay.png" alt=""></a></li>
+                            </ul>
+                            <h3 class="footer__item-title">MẠNG XÃ HỘI</h3>
+                            <ul class="footer__item-social">
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="item"><a href="" class="link"><i class="fa-brands fa-youtube"></i></a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="back-top" id="back-top">
+            <i class="fa-sharp fa-solid fa-jet-fighter-up"></i>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+</body>
+</html> 
